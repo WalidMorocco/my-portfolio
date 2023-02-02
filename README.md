@@ -69,8 +69,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Tailwind
+
+### `npm install -D tailwindcss`
+
+### `npx tailwindcss init`
+
+### `npx tailwindcss -i ./src/index.css -o ./public/output.css --watch`
+
 ## Libraries
 
-### `npm i react-anchor-link-smooth-scroll` fails to minify
+### `npm i react-anchor-link-smooth-scroll`
 
-### `npm i framer-motion` fails to minify
+### `npm i framer-motion`
