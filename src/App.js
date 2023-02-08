@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import Landing from "./components/AboutMe";
+import AboutMe from "./components/AboutMe";
 import DotGroup from "./components/DotGroup";
 import Navbar from "./components/Navbar";
 import useMediaQuery from "./hooks/useMediaQuery";
+import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -29,10 +30,18 @@ function App() {
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}/>
+            setSelectedPage={setSelectedPage}
+          />
         )}
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <AboutMe setSelectedPage={setSelectedPage} />
+        </motion.div>
       </div>
-      <Landing setSelectedPage={setSelectedPage} />
+      
     </div>
   );
 }
