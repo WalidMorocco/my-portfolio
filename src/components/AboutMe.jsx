@@ -10,7 +10,7 @@ const AboutMe = ({ setSelectedPage }) => {
     <section
       id='home'
       className='gap-16 py-10
-        md:flex md:justify-between md items-center md:h-full mt-24 '
+        md:flex md:justify-between md items-center md:h-full'
     >
       {/* Image Section */}
       <div className='md:order-2 flex justify-between basis-3/5 z-10 mt-16 md:mt-16'>

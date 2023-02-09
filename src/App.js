@@ -4,6 +4,7 @@ import DotGroup from "./components/DotGroup";
 import Navbar from "./components/Navbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import Skills from "./components/Skills";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -41,7 +42,15 @@ function App() {
           <AboutMe setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
-      
+      <div className="w-5/6 mx-auto md:h-full ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <Skills />
+        </motion.div>
+      </div>
     </div>
   );
 }
