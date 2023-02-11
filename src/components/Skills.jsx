@@ -9,7 +9,7 @@ const Skills = () => {
       id='skills'
       className='pt-10 pb-24'
     >
-      {/* HEADER AND IMAGE SECTION */}
+      {/* HEADER */}
       <div className='md:flex md:justify-between md:gap-16 mt-32'>
         <motion.div
           className='md:w-1/3'
@@ -25,39 +25,14 @@ const Skills = () => {
           <p className='font-playfair font-semibold text-4xl mb-5'>
             MY <span className='text-red'>SKILLS</span>
           </p>
-          <p className='mt-10 mb-7'>
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
         </motion.div>
-
-        <div className='mt-16 md:mt-0'>
-          {isAboveMediumScreens ? (
-            <div
-              className='relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]'
-            >
-              <img
-                alt='skills'
-                className='z-10'
-                src='assets/skills-image.png'
-              />
-            </div>
-          ) : (
-            <img
-              alt='skills'
-              className='z-10'
-              src='assets/skills-image.png'
-            />
-          )}
-        </div>
       </div>
 
       {/* SKILLS */}
       <div className='md:flex md:justify-between mt-16 gap-32'>
         {/* EXPERIENCE */}
         <motion.div
-          className='md:w-1/3 mt-10'
+          className='md:w-1/3 mt-10 mb-16'
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
@@ -69,26 +44,54 @@ const Skills = () => {
         >
           <div className='relative h-32'>
             <div className='z-10'>
-              <p className='font-playfair font-semibold text-5xl'>01</p>
               <p className='font-playfair font-semibold text-3xl mt-3'>
-                Experience
+                Languages
               </p>
             </div>
             <div
               className='w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]'
-              id='myTools'
+              id='myLanguages'
             />
           </div>
-          <p className='mt-5'>
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
-          </p>
+          <div className='m-10 flex justify-center space-x-11'>
+            <img
+              className=''
+              alt='python'
+              src={require('../assets/python-logo.png')}
+              title='Python'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/java-logo.png')}
+              title='Java'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/javascript-logo.png')}
+              title='JavaScript'
+            />
+          </div>
+          <div className='m-10 flex justify-center space-x-11'>
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/sql-logo.png')}
+              title='SQL'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/csharp-logo.png')}
+              title='C#'
+            />
+          </div>
         </motion.div>
 
         {/* INNOVATIVE */}
         <motion.div
-          className='md:w-1/3 mt-10'
+          className='md:w-1/3 mt-10 mb-16'
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
@@ -100,19 +103,35 @@ const Skills = () => {
         >
           <div className='relative h-32'>
             <div className='z-10'>
-              <p className='font-playfair font-semibold text-5xl'>02</p>
               <p className='font-playfair font-semibold text-3xl mt-3'>
-                Innovative
+                Frameworks
               </p>
             </div>
-            <div className='w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]' />
+            <div
+              className='w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]'
+              id='myFrameworks'
+            />
           </div>
-          <p className='mt-5'>
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
-          </p>
+          <div className='m-10 flex justify-center space-x-11'>
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/express-logo.png')}
+              title='Express.JS'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/react-logo.png')}
+              title='React.JS'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/dotnet-logo.png')}
+              title='ASP.NET'
+            />
+          </div>
         </motion.div>
         {/* IMAGINATIVE */}
         <motion.div
@@ -128,19 +147,35 @@ const Skills = () => {
         >
           <div className='relative h-32'>
             <div className='z-10'>
-              <p className='font-playfair font-semibold text-5xl'>03</p>
-              <p className='font-playfair font-semibold text-3xl mt-3'>
-                Imaginative
+              <p className='font-playfair font-semibold text-3xl mt-3 drop-shadow-xl'>
+                Other Tools
               </p>
             </div>
-            <div className='w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]' />
+            <div
+              className='w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]'
+              id='myTools'
+            />
           </div>
-          <p className='mt-5'>
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
-          </p>
+          <div className='m-10 flex justify-center space-x-11'>
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/git-logo.png')}
+              title='GIT'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/aws-logo.png')}
+              title='Amazon Web Service'
+            />
+            <img
+              className=''
+              alt='github-link'
+              src={require('../assets/mongo-logo.png')}
+              title='MongoDB'
+            />
+          </div>
         </motion.div>
       </div>
     </section>
