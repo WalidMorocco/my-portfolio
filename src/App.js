@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Projects from "./components/projects/Projects";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
