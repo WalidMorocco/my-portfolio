@@ -57,7 +57,13 @@ const Projects = () => {
               techs='Express, ReactJS, MongoDB'
               link='https://github.com/WalidMorocco/TWR-Final-Project'
             />
-            <Project title='Afrolance' />
+            <Project
+              title='Afrolance'
+              description='Find Freelance Job offers in your field or post your own and see the applicants with Afrolance! 
+                          You can explored the different job offers and the applicants but also set up your profile as a freelancer or an employer'
+              techs='ASP.NET, C#, SQL'
+              link='https://github.com/WalidMorocco/TWR-Final-Project'
+            />
           </div>
 
           {/* ROW 2 */}
@@ -68,7 +74,12 @@ const Projects = () => {
             >
               DATA SCIENCE
             </div>
-            <Project title='Neural Network' />
+            <Project
+              title='Neural Network'
+              description='Neural Network based app where you can train the AI to recognize the letters A, B, C and D and then test it all in the GUI.'
+              techs='Java'
+              link='https://github.com/WalidMorocco/TWR-Final-Project'
+            />
             <Project title='Afrolance' />
           </div>
 
@@ -80,7 +91,13 @@ const Projects = () => {
             >
               OTHERS
             </div>
-            <Project title='Afrolance' />
+            <Project
+              title='Burning Castle'
+              description='Discover nearby coffee shops on Coffee-Me! 
+                          You can easily find and explore the best coffee spots around you, save your favorite stores, create an account, and even create your own store profile.'
+              techs='Unity, C#'
+              link='https://github.com/WalidMorocco/Bruning-Castle'
+            />
             <Project title='Afrolance' />
           </div>
         </motion.div>
