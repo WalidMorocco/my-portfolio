@@ -6,6 +6,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Skills from "./components/Skills";
 import Projects from "./components/projects/Projects";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -25,13 +27,13 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app bg-deep-blue space-y-1">
       <Navbar 
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage} 
         setSelectedPage={selectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full ">
+      <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -46,7 +48,7 @@ function App() {
           <AboutMe setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
-      <div className="w-5/6 mx-auto md:h-full ">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -55,7 +57,7 @@ function App() {
           <Skills />
         </motion.div>
       </div>
-      <div className="w-5/6 mx-auto md:h-full ">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -64,6 +66,16 @@ function App() {
           <Projects />
         </motion.div>
       </div>
+      <div className="w-5/6 mx-auto md:h-4/6">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <ContactMe />
+        </motion.div>
+      </div>
+      <Footer />
     </div>
   );
 }

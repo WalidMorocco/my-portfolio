@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      className='pt-48 pb-48'
+      className=''
     >
       {/* HEADINGS */}
       <motion.div

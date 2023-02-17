@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
-import useMediaQuery from '../hooks/useMediaQuery';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import SocialMedia from './SocialMedia';
 
 const AboutMe = ({ setSelectedPage }) => {
-  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
-
   return (
     <section
       id='home'
@@ -14,25 +11,21 @@ const AboutMe = ({ setSelectedPage }) => {
     >
       {/* Image Section */}
       <div className='md:order-2 flex justify-between basis-3/5 z-10 mt-16 md:mt-16'>
-        {isAboveMediumScreens ? (
-          <div
-            className=' relative z-0 ml-20 before:absolute before:-left-10 before:bottom-5 before:rounded-t-[400px]
+        <div
+          className=' relative z-0 ml-20 before:absolute before:-left-10 before:bottom-5 before:rounded-t-[400px]
                 before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full  before:z-[-1] before:bg-gradient-rainbow'
-          >
-            <div
-              className='relative z-0  before:absolute before:rounded-t-[400px]
+        >
+          <div
+            className='relative z-0  before:absolute before:rounded-t-[400px]
                 before:w-full before:max-w-[525px] hover:before:max-w-[600px] before:duration-1000  before:h-full before:z-[-1] before:bg-deep-blue'
-            >
-              <img
-                alt='profile'
-                className='hover:filter hover:saturate-200 transition  duration-1000 z-10 w-full max-w-[400px] md:max-w-[600px] '
-                src={require('../assets/profile-image2.png')}
-              />
-            </div>
+          >
+            <img
+              alt='profile'
+              className='hover:filter hover:saturate-200 transition  duration-1000 z-10 w-full max-w-[400px] md:max-w-[600px] '
+              src={require('../assets/profile-image2.png')}
+            />
           </div>
-        ) : (
-          <div></div>
-        )}
+        </div>
       </div>
 
       <div className='z-30 basis-2/5 mt-12 md:mt-32'>
