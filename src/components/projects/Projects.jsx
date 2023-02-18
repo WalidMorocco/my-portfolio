@@ -14,11 +14,11 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      className=''
+      className='gap-16 py-10 pt-24'
     >
       {/* HEADINGS */}
       <motion.div
-        className='md:w-2/5 mx-auto text-center'
+        className='md:w-2/5 mx-auto text-center '
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.5 }}
@@ -34,18 +34,18 @@ const Projects = () => {
       </motion.div>
 
       {/* PROJECTS */}
-      <div className='flex justify-center pt-7'>
+      <div className='flex justify-center pt-7 mt-32'>
         <motion.div
-          className='sm:grid sm:grid-cols-1 space-y-10'
+          className='sm:grid sm:grid-cols-1 space-y-10 '
           variants={container}
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div className='sm:grid sm:grid-cols-3 sm:space-x-7'>
+          <div className='sm:grid sm:grid-cols-3 gap-10'>
             <div
-              className='flex justify-center text-center items-center p-10 bg-blue
+              className='flex justify-center text-center items-center p-10 bg-purple
                 max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
             >
               FULL STACK
@@ -67,9 +67,9 @@ const Projects = () => {
           </div>
 
           {/* ROW 2 */}
-          <div className='sm:grid sm:grid-cols-3 sm:space-x-7'>
+          <div className='sm:grid sm:grid-cols-3 gap-10'>
             <div
-              className='flex justify-center text-center items-center p-10 bg-blue
+              className='flex justify-center text-center items-center p-10 bg-purple
                 max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
             >
               DATA SCIENCE
@@ -80,13 +80,18 @@ const Projects = () => {
               techs='Java'
               link='https://github.com/WalidMorocco/TWR-Final-Project'
             />
-            <Project title='Afrolance' />
+            <Project
+              title='Stock Market Prediction'
+              description='Neural Network based app where you can train the AI to recognize the letters A, B, C and D and then test it all in the GUI.'
+              techs='Java'
+              link='https://github.com/WalidMorocco/TWR-Final-Project'
+            />
           </div>
 
           {/* ROW 3 */}
-          <div className='sm:grid sm:grid-cols-3 sm:space-x-7'>
+          <div className='sm:grid sm:grid-cols-3 gap-10'>
             <div
-              className='flex justify-center text-center items-center p-10 bg-blue
+              className='flex justify-center text-center items-center p-10 bg-purple
                 max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
             >
               OTHERS
@@ -98,7 +103,12 @@ const Projects = () => {
               techs='Unity, C#'
               link='https://github.com/WalidMorocco/Bruning-Castle'
             />
-            <Project title='Afrolance' />
+            <Project
+              title='Todo-App'
+              description='Personal To do App to keep track of the task I have to do during the day'
+              techs='ReactJS, TypeScript'
+              link='https://github.com/WalidMorocco/Bruning-Castle'
+            />
           </div>
         </motion.div>
       </div>

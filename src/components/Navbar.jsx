@@ -20,7 +20,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-  const navbarBackground = isTopOfPage ? '' : 'bg-purple';
+  const navbarBackground = isTopOfPage ? '' : 'bg-purple opacity-90';
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -55,7 +55,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className='rounded-full bg-purple p-2 w-1/6'
+            className='rounded-full bg-purple p-2 w-1/6 '
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <img
@@ -67,7 +67,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* Mobile Menu Popup */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className='fixed right-0 bottom-0 h-full bg-blue w-1/2'>
+          <div className='fixed right-0 bottom-0 h-full bg-purple w-1/2'>
             {/* Close Icon */}
             <div className='flex justify-end p-12'>
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

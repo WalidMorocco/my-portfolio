@@ -19,7 +19,7 @@ const ContactMe = () => {
   return (
     <section
       id='contact'
-      className='contact py-48 space-y-10'
+      className='contact py-48 space-y-10 '
     >
       {/* HEADINGS */}
       <motion.div
@@ -31,11 +31,11 @@ const ContactMe = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className='mx-auto'
+        className='mx-auto '
       >
         <div>
           <p className='font-playfair font-semibold text-4xl'>
-            <span className='text-yellow'>CONTACT ME</span> TO GET STARTED
+            <span className='text-yellow'>CONTACT ME</span>
           </p>
         </div>
       </motion.div>
@@ -112,7 +112,7 @@ const ContactMe = () => {
             )}
 
             <button
-              className='w-2/5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500'
+              className='w-2/5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-300'
               type='submit'
             >
               <p className='m-5'>SEND ME A MESSAGE</p>
