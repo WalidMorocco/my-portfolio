@@ -19,7 +19,7 @@ const ContactMe = () => {
   return (
     <section
       id='contact'
-      className='contact py-48 space-y-10 '
+      className='contact pt-48'
     >
       {/* HEADINGS */}
       <motion.div
@@ -40,7 +40,7 @@ const ContactMe = () => {
         </div>
       </motion.div>
 
-      <div className='mx-auto gap-16 mt-5 '>
+      <div className='mx-auto gap-16 mt-16'>
         <motion.div
           initial='hidden'
           whileInView='visible'

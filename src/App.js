@@ -33,7 +33,7 @@ function App() {
         selectedPage={selectedPage} 
         setSelectedPage={selectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full border">
+      <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -48,7 +48,7 @@ function App() {
           <AboutMe setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
-      <div className="w-5/6 mx-auto md:h-full border">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -57,7 +57,7 @@ function App() {
           <Skills />
         </motion.div>
       </div>
-      <div className="w-5/6 mx-auto md:h-full border">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -66,7 +66,7 @@ function App() {
           <Projects />
         </motion.div>
       </div>
-      <div className="w-5/6 mx-auto md:h-full border">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

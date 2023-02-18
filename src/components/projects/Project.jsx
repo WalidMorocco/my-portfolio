@@ -21,17 +21,18 @@ const Project = ({ title, description, techs, link }) => {
       <motion.div
         variants={projectVariant}
         transition={{ duration: 0.7 }}
-        className='relative max-w-[400px] max-h-[200px]'
+        className='relative '
         onClick={() => setShowModal(true)}
       >
-        <div className='flex justify-center text-center items-center h-full object-contain cursor-pointer hover:opacity-80'>
+        <div className='border-purple flex justify-center text-center items-center h-full cursor-pointer hover:opacity-80'>
           <img
-            className='object-contain h-full w-full'
+            className='max-w-full object-contain max-h-full w-auto h-auto'
             src={require(`../../assets/${projectTitle}.png`)}
             alt={projectTitle}
           />
         </div>
       </motion.div>
+
       {showModal && (
         <ProjectModal
           dismissModal={onDismissModal}

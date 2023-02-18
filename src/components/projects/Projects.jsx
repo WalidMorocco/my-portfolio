@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      className='gap-16 py-10 pt-24'
+      className='gap-16 pb-48'
     >
       {/* HEADINGS */}
       <motion.div
@@ -34,16 +34,16 @@ const Projects = () => {
       </motion.div>
 
       {/* PROJECTS */}
-      <div className='flex justify-center pt-7 mt-32'>
+      <div className='flex justify-center pt-7'>
         <motion.div
-          className='sm:grid sm:grid-cols-1 space-y-10 '
+          className='sm:grid sm:grid-cols-1 space-y-10'
           variants={container}
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div className='sm:grid sm:grid-cols-3 gap-10'>
+          <div className='sm:grid sm:grid-cols-3 gap-10 '>
             <div
               className='flex justify-center text-center items-center p-10 bg-purple
                 max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'

@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       id='skills'
-      className='mt-28 border'
+      className='pt-10 pb-48'
     >
       {/* HEADER */}
       <div className='md:flex md:justify-between md:gap-16 mt-32'>
@@ -20,9 +20,7 @@ const Skills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className='font-playfair font-semibold text-4xl mb-5'>
-            MY <span className='text-red'>SKILLS</span>
-          </p>
+          <p className='font-playfair font-semibold text-4xl mb-5'>MY SKILLS</p>
         </motion.div>
       </div>
 
