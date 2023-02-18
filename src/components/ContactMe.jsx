@@ -34,7 +34,7 @@ const ContactMe = () => {
         className='mx-auto '
       >
         <div>
-          <p className='font-playfair font-semibold text-4xl'>
+          <p className='font-playfair font-semibold text-4xl text-center'>
             <span className='text-yellow'>CONTACT ME</span>
           </p>
         </div>
@@ -57,7 +57,7 @@ const ContactMe = () => {
             onSubmit={onSubmit}
             action='https://formsubmit.co/76b35b9513b34f4e9d689a7c0e772ae9'
             method='POST'
-            className='space-y-10 text-black'
+            className='space-y-10 text-black grid grid-cols-1 place-items-center'
           >
             <input
               className='w-10/12 font-semibold placeholder-black p-3'

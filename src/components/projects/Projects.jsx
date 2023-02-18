@@ -62,7 +62,7 @@ const Projects = () => {
               description='Find Freelance Job offers in your field or post your own and see the applicants with Afrolance! 
                           You can explored the different job offers and the applicants but also set up your profile as a freelancer or an employer'
               techs='ASP.NET, C#, SQL'
-              link='https://github.com/WalidMorocco/TWR-Final-Project'
+              link='https://github.com/WalidMorocco/AfrolanceV3'
             />
           </div>
 
@@ -78,13 +78,13 @@ const Projects = () => {
               title='Neural Network'
               description='Neural Network based app where you can train the AI to recognize the letters A, B, C and D and then test it all in the GUI.'
               techs='Java'
-              link='https://github.com/WalidMorocco/TWR-Final-Project'
+              link='https://github.com/WalidMorocco/Letter-Recognition-Neural-Network'
             />
             <Project
               title='Stock Market Prediction'
-              description='Neural Network based app where you can train the AI to recognize the letters A, B, C and D and then test it all in the GUI.'
-              techs='Java'
-              link='https://github.com/WalidMorocco/TWR-Final-Project'
+              description='Random Forest based program to predict perform stock price predictions.'
+              techs='Python, Sklearn'
+              link='https://github.com/WalidMorocco/StockMarketPrediction-RandomForest'
             />
           </div>
 
@@ -98,16 +98,15 @@ const Projects = () => {
             </div>
             <Project
               title='Burning Castle'
-              description='Discover nearby coffee shops on Coffee-Me! 
-                          You can easily find and explore the best coffee spots around you, save your favorite stores, create an account, and even create your own store profile.'
+              description='RPG Mini game where you need to collect chests guarded by enemies to open the gates and escape the Burning Castle.'
               techs='Unity, C#'
               link='https://github.com/WalidMorocco/Bruning-Castle'
             />
             <Project
               title='Todo-App'
-              description='Personal To do App to keep track of the task I have to do during the day'
+              description='Personal To do App to keep track of the task to do during the day'
               techs='ReactJS, TypeScript'
-              link='https://github.com/WalidMorocco/Bruning-Castle'
+              link='https://github.com/WalidMorocco/todo-db'
             />
           </div>
         </motion.div>
