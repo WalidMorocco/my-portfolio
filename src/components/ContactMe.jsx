@@ -19,7 +19,7 @@ const ContactMe = () => {
   return (
     <section
       id='contact'
-      className='contact pt-48'
+      className='py-48'
     >
       {/* HEADINGS */}
       <motion.div

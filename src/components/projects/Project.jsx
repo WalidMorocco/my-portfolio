@@ -27,7 +27,7 @@ const Project = ({ title, description, techs, link }) => {
         <div className='border-purple flex justify-center text-center items-center h-full cursor-pointer hover:opacity-80'>
           <img
             className='max-w-full object-contain max-h-full w-auto h-auto'
-            src={require(`../../assets/${projectTitle}.png`)}
+            src={`assets/${projectTitle}.png`}
             alt={projectTitle}
           />
         </div>

@@ -7,7 +7,6 @@ const Skills = () => {
       id='skills'
       className='pt-10 pb-48'
     >
-      {/* HEADER */}
       <div className='md:flex md:justify-between md:gap-16 mt-32'>
         <motion.div
           className='md:w-1/3'
@@ -24,9 +23,7 @@ const Skills = () => {
         </motion.div>
       </div>
 
-      {/* SKILLS */}
       <div className='md:flex md:justify-between mt-16 gap-32'>
-        {/* EXPERIENCE */}
         <motion.div
           className='md:w-1/3 mt-10 mb-16'
           initial='hidden'
@@ -53,19 +50,19 @@ const Skills = () => {
             <img
               className=''
               alt='python'
-              src={require('../assets/python-logo.png')}
+              src='assets/python-logo.png'
               title='Python'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/java-logo.png')}
+              src='assets/java-logo.png'
               title='Java'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/javascript-logo.png')}
+              src='assets/javascript-logo.png'
               title='JavaScript'
             />
           </div>
@@ -73,13 +70,13 @@ const Skills = () => {
             <img
               className=''
               alt='github-link'
-              src={require('../assets/sql-logo.png')}
+              src='assets/sql-logo.png'
               title='SQL'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/csharp-logo.png')}
+              src='assets/csharp-logo.png'
               title='C#'
             />
           </div>
@@ -112,19 +109,19 @@ const Skills = () => {
             <img
               className=''
               alt='github-link'
-              src={require('../assets/express-logo.png')}
+              src='assets/express-logo.png'
               title='Express.JS'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/react-logo.png')}
+              src='assets/react-logo.png'
               title='React.JS'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/dotnet-logo.png')}
+              src='assets/dotnet-logo.png'
               title='ASP.NET'
             />
           </div>
@@ -156,19 +153,19 @@ const Skills = () => {
             <img
               className=''
               alt='github-link'
-              src={require('../assets/git-logo.png')}
+              src='assets/git-logo.png'
               title='GIT'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/aws-logo.png')}
+              src='assets/aws-logo.png'
               title='Amazon Web Service'
             />
             <img
               className=''
               alt='github-link'
-              src={require('../assets/mongo-logo.png')}
+              src='/assets/mongo-logo.png'
               title='MongoDB'
             />
           </div>

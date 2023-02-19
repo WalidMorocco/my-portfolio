@@ -9,7 +9,7 @@ const SocialMedia = () => {
       >
         <img
           alt='linkedin-link'
-          src={require('../assets/linkedin-icon.png')}
+          src='assets/linkedin-icon.png'
         />
       </a>
       <a
@@ -20,7 +20,7 @@ const SocialMedia = () => {
       >
         <img
           alt='github-link'
-          src={require('../assets/github-icon.png')}
+          src='assets/github-icon.png'
         />
       </a>
     </div>

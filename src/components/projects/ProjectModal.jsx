@@ -12,7 +12,7 @@ const ProjectModal = (props) => {
           <div className='md:mr-10 mb-4 md:mt-4 h-full md:w-1/2'>
             <img
               className='mx-auto rounded-lg shadow-lg'
-              src={require(`../../assets/${projectTitle}.png`)}
+              src={`assets/${projectTitle}.png`}
               alt={projectTitle}
             />
           </div>

@@ -21,7 +21,7 @@ const AboutMe = ({ setSelectedPage }) => {
             <img
               alt='profile'
               className='hover:filter hover:saturate-200 transition  duration-1000 z-10 w-full max-w-[400px] md:max-w-[600px] '
-              src={require('../assets/profile-image2.png')}
+              src='assets/profile-image.png'
             />
           </div>
         </div>
